@@ -21,11 +21,11 @@ public class AppConfig {
     }
 
     RedisTemplate<String, Object> redisTemplate() {
-        final RedisTemplate<String, Object> redisTemplate = new RedisTemplate<String, Object>();
+        final RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(jedisConnectionFactory());
         redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setHashValueSerializer(new GenericToStringSerializer<Object>(Object.class));
-        redisTemplate.setValueSerializer(new GenericToStringSerializer<Object>(Object.class));
+        redisTemplate.setHashValueSerializer(new GenericToStringSerializer<>(Object.class));
+        redisTemplate.setValueSerializer(new GenericToStringSerializer<>(Object.class));
         return redisTemplate;
     }
 
