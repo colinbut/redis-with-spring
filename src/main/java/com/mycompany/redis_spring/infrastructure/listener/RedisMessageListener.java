@@ -5,12 +5,16 @@
  */
 package com.mycompany.redis_spring.infrastructure.listener;
 
+import org.apache.log4j.Logger;
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;
 
 public class RedisMessageListener implements MessageListener {
+
+    private static Logger LOGGER = Logger.getLogger(RedisMessageListener.class);
+
     @Override
     public void onMessage(Message message, byte[] bytes) {
-        System.out.println("Received by RedisMessageListener " + message.toString());
+        LOGGER.info("Received by RedisMessageListener " + message.toString());
     }
 }
