@@ -5,7 +5,7 @@
  */
 package com.mycompany.redis_spring.config;
 
-import com.mycompany.redis_spring.infrastructure.RedisMessageListener;
+import com.mycompany.redis_spring.infrastructure.listener.RedisMessageListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;

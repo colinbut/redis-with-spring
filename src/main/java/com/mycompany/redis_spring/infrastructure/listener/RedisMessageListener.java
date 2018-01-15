@@ -3,7 +3,7 @@
  * | Copyright © 2018 Colin But. All rights reserved.
  * |-------------------------------------------------
  */
-package com.mycompany.redis_spring.infrastructure;
+package com.mycompany.redis_spring.infrastructure.listener;
 
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;
