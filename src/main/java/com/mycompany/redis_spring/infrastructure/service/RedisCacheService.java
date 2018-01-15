@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Service
-public class RedisServiceImpl implements RedisService {
+public class RedisCacheService {
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
