@@ -14,14 +14,14 @@ import java.util.concurrent.CountDownLatch;
 /**
  * Simple POJO
  */
-public class Reciever {
+public class Receiver {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Reciever.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Receiver.class);
 
     private CountDownLatch countDownLatch;
 
     @Autowired
-    public Reciever(CountDownLatch countDownLatch) {
+    public Receiver(CountDownLatch countDownLatch) {
         this.countDownLatch = countDownLatch;
     }
 
