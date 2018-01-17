@@ -9,6 +9,8 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.concurrent.CountDownLatch;
 
+import static com.mycompany.redis_spring.springbootway.AppConfig.TOPIC_NAME;
+
 @SpringBootApplication
 public class SpringBootWayApplication {
 
@@ -22,7 +24,7 @@ public class SpringBootWayApplication {
 
         LOGGER.info("Sending message");
 
-        stringRedisTemplate.convertAndSend("chat", "Hello from Redis!");
+        stringRedisTemplate.convertAndSend(TOPIC_NAME, "Hello from Redis!");
 
         countDownLatch.await();
 

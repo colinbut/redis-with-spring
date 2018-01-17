@@ -18,12 +18,14 @@ import java.util.concurrent.CountDownLatch;
 @Configuration
 public class AppConfig {
 
+    public static final String TOPIC_NAME = "chat";
+
     @Bean
     RedisMessageListenerContainer container(RedisConnectionFactory redisConnectionFactory, MessageListenerAdapter messageListenerAdapter) {
         RedisMessageListenerContainer container = new RedisMessageListenerContainer();
 
         container.setConnectionFactory(redisConnectionFactory);
-        container.addMessageListener(messageListenerAdapter, new PatternTopic("chat"));
+        container.addMessageListener(messageListenerAdapter, new PatternTopic(TOPIC_NAME));
 
         return container;
     }
