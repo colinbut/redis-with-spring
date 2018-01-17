@@ -3,8 +3,9 @@
  * | Copyright © 2018 Colin But. All rights reserved.
  * |-------------------------------------------------
  */
-package com.mycompany.redis_spring.springbootway;
+package com.mycompany.redis_spring.springbootway.config;
 
+import com.mycompany.redis_spring.springbootway.messaging.Receiver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

@@ -3,7 +3,7 @@
  * | Copyright © 2018 Colin But. All rights reserved.
  * |-------------------------------------------------
  */
-package com.mycompany.redis_spring.springbootway;
+package com.mycompany.redis_spring.springbootway.messaging;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.concurrent.CountDownLatch;
 
-import static com.mycompany.redis_spring.springbootway.AppConfig.TOPIC_NAME;
+import static com.mycompany.redis_spring.springbootway.config.AppConfig.TOPIC_NAME;
 
 @SpringBootApplication
 public class SpringBootWayApplication {
